@@ -1,0 +1,7 @@
+2018-03-15 16:59:59,638:INFO main (TCPServer.java:31) - *** Node is started,waiting for others ***
+2018-03-15 17:00:25,579:ERROR Thread-1 (NodeThread.java:61) - not a number:
+java.lang.NullPointerException: null
+	at acb.blockchain.tcp.thread.NodeThread.run(NodeThread.java:55) [classes/:?]
+2018-03-15 17:00:42,513:INFO Thread-2 (BroadCastThread.java:34) - 
+------------broadcast-------------
+

@@ -4,27 +4,27 @@ package acb.blockchain.entity;
 public class Block {
 
     /**是这个块在整个链中的位置*/
-
     private int index;
 
     /**显而易见就是块生成时的时间戳*/
-
     private String timestamp;
 
     /**虚拟资产。我们要记录的数据*/
-
     private int vac;
 
     /**是这个块通过 SHA256 算法生成的散列值*/
-
     private String hash;
 
     /**指向前一个块的 SHA256 散列值*/
-
     private String prevHash;
     
-    /** getters and setters**/ 
+    /**难度 **/
+    private int difficulty;
     
+    /**证明 **/
+    private String nonce;
+    
+    /** getters and setters**/ 
 	public int getIndex() {
 		return index;
 	}
@@ -63,6 +63,22 @@ public class Block {
 
 	public void setPrevHash(String prevHash) {
 		this.prevHash = prevHash;
+	}
+
+	public int getDifficulty() {
+		return difficulty;
+	}
+
+	public void setDifficulty(int difficulty) {
+		this.difficulty = difficulty;
+	}
+
+	public String getNonce() {
+		return nonce;
+	}
+
+	public void setNonce(String nonce) {
+		this.nonce = nonce;
 	}
 
 }

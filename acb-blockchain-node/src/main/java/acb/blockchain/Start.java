@@ -1,12 +1,13 @@
-package acb.blockchain.acbblockchainnode;
+package acb.blockchain;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AcbBlockchainNodeApplication {
+public class Start {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AcbBlockchainNodeApplication.class, args);
+		SpringApplication.run(Start.class, args);
+		NodeClient.getInstance();
 	}
 }

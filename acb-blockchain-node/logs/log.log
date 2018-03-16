@@ -1,0 +1,26 @@
+2018-03-15 17:01:53,303:INFO main (TCPServer.java:31) - *** Node is started,waiting for others ***
+2018-03-15 17:01:59,577:INFO Thread-1 (NodeThread.java:60) - add new block with vac：1111
+2018-03-15 17:02:09,193:INFO Thread-1 (NodeThread.java:60) - add new block with vac：11111
+2018-03-15 17:02:27,452:INFO Thread-2 (BroadCastThread.java:34) - 
+------------broadcast-------------
+
+2018-03-15 17:02:51,486:INFO Thread-1 (NodeThread.java:60) - add new block with vac：111
+2018-03-15 17:03:27,359:ERROR Thread-1 (NodeThread.java:62) - not a number:
+java.lang.NumberFormatException: For input string: "111111111111111"
+	at java.lang.NumberFormatException.forInputString(Unknown Source) ~[?:1.8.0_131]
+	at java.lang.Integer.parseInt(Unknown Source) ~[?:1.8.0_131]
+	at java.lang.Integer.parseInt(Unknown Source) ~[?:1.8.0_131]
+	at acb.blockchain.tcp.thread.NodeThread.run(NodeThread.java:50) [classes/:?]
+2018-03-15 17:04:00,035:ERROR Thread-1 (NodeThread.java:71) - TCP i/o error Or client closed
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source) ~[?:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[?:1.8.0_131]
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source) ~[?:1.8.0_131]
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source) ~[?:1.8.0_131]
+	at sun.nio.cs.StreamDecoder.read(Unknown Source) ~[?:1.8.0_131]
+	at java.io.InputStreamReader.read(Unknown Source) ~[?:1.8.0_131]
+	at java.io.BufferedReader.fill(Unknown Source) ~[?:1.8.0_131]
+	at java.io.BufferedReader.readLine(Unknown Source) ~[?:1.8.0_131]
+	at java.io.BufferedReader.readLine(Unknown Source) ~[?:1.8.0_131]
+	at acb.blockchain.tcp.thread.NodeThread.run(NodeThread.java:48) [classes/:?]
+2018-03-15 17:04:00,036:INFO Thread-1 (NodeThread.java:73) - node closed:127.0.0.1,port:16418
