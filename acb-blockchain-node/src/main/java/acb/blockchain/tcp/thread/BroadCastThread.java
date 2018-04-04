@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 import com.google.gson.Gson;
 
 import acb.blockchain.controller.NodeController;
-import acb.blockchain.entity.Block;
+import acb.blockchain.entity.block.Block;
 
 public class BroadCastThread extends Thread{
 	private static final Logger logger = LoggerFactory.getLogger(NodeController.class); 

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.google.gson.Gson;
 
 import acb.blockchain.NodeClient;
-import acb.blockchain.entity.Block;
+import acb.blockchain.entity.block.Block;
 import acb.blockchain.util.BlockUtils;
 
 

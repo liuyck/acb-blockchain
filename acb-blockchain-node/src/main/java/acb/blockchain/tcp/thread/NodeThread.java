@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
 import com.google.gson.Gson;
 
 import acb.blockchain.controller.NodeController;
-import acb.blockchain.entity.Block;
+import acb.blockchain.entity.block.Block;
 import acb.blockchain.util.BlockUtils;
 
 public class NodeThread extends Thread{
